@@ -1,11 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frida Kyte Sollid | Portefølje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
+    <header class="hero" id="top">
+        <div class="hero-inner">
+            <img src="bilder/FridaCVBILDE_3.jpg" alt="Portrett av Frida" class="hero-photo">
+            <div class="hero-title-wrap">
+                <h1>Frida Kyte Sollid</h1>
+                <p>Portefølje</p>
+            </div>
+        </div>
+
+        <nav class="pill-nav" aria-label="Navigasjon">
+            <a href="#filmer">Filmer</a>
+            <a href="#bilder">Bilder</a>
+            <a href="#grafisk">Grafisk</a>
+        </nav>
+    </header>
+
+    <section class="projects-banner">
+        <h2>Mine Prosjekter</h2>
+    </section>
+
+    <main>
+        <section id="filmer" class="section films">
+            <h2 class="section-pill">Filmer</h2>
+
+            <article class="film-card">
+                <div class="media media-video">
+                    <video controls preload="none" aria-label="Film Gjelda">
+                        <source src="./filmer/gjelda.mp4" type="video/mp4">
+                        Nettleseren støtter ikke videoavspilling.
+                    </video>
+                </div>
+                <div class="film-text">
+                    <h3>"Gjelda"</h3>
+                    <p>
+                        Kortfilmprosjekt på skolen.
+                        Jeg var manusforfatter, sminker, regissør og klipper.
+                        Målet var å formidle hvor fort ting kan gå galt, og at det aldri er for sent å endre seg.
+                        Den korte tidsfristen gjorde produksjonen krevende, men vi oppnådde en god helhet.
+                    </p>
+                </div>
+            </article>
+
+            <article class="film-card">
+                <div class="media media-video">
+                    <video controls preload="none" aria-label="Film Bak deg">
+                        <source src="./filmer/BakDeg.mp4" type="video/mp4">
+                        Nettleseren støtter ikke videoavspilling.
+                    </video>
+                </div>
+                <div class="film-text">
+                    <h3>"Bak deg"</h3>
+                    <p>
+                        Kortfilmprosjekt på skolen.
+                        Jeg var manusforfatter, filmfotograf, regissør og klipper.
+                        Målet var å lage spenning rundt det å bli forfulgt og ikke bli trodd.
+                        Å ha mange roller med lite tid var utfordrende, men resultatet ble godt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="film-card">
+                <div class="media media-video">
+                    <video controls preload="metadata" aria-label="Film Zombiedoktor">
+                        <source src="./filmer/Zombiedoktor.mp4" type="video/mp4">
+                        Nettleseren støtter ikke videoavspilling.
+                    </video>
+                </div>
+                <div class="film-text">
+                    <h3>"Zombiedoktor"</h3>
+                    <p>
+                        Kortfilmprosjekt på skolen.
+                        Jeg var manusforfatter, sminker, filmfotograf og klipper.
+                        Målet var å lage en skrekkfilm.
+                        Dette var den første kortfilmen jeg lagde.
+                        Til tross for uerfarenhet ble resultatet bra.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section id="bilder" class="section photos">
+            <h2 class="section-pill">Bilder</h2>
+            <div class="photo-layout">
+                <div class="edge-strip" aria-hidden="true"></div>
+
+                <div class="photo-collage">
+                    <div class="photo-row row-1">
+                        <p class="photo-note">Portrett av Mikael.<br>Foto: Meg.</p>
+                        <figure class="photo-frame portrait">
+                            <img src="bilder/MkaelPortrett1_1.jpg" alt="Portrett av Mikael">
+                        </figure>
+                        <figure class="photo-frame landscape">
+                            <img src="bilder/Malcomsistebilde.jpg" alt="Lyssatt portrett av Malcom">
+                        </figure>
+                        <p class="photo-note">Lyssetting, kontraster og skygger.<br>Redigert i Lightroom og Photoshop.</p>
+                    </div>
+
+                    <div class="photo-row row-2">
+                        <div class="row-space" aria-hidden="true"></div>
+                        <figure class="photo-frame landscape">
+                            <img src="bilder/Rembrandt2.jpg" alt="Rembrandt-lys portrett av Sebastian">
+                        </figure>
+                        <p class="photo-note">Rembrandt-lys.<br>Portrett av Sebastian.<br>Foto: Meg.</p>
+                        <figure class="photo-frame portrait">
+                            <img src="bilder/DitlevPortrett1.jpg" alt="Portrett av Ditlev">
+                        </figure>
+                        <p class="photo-note">Portrett av Ditlev.<br>Foto: Meg.</p>
+                    </div>
+
+                    <div class="photo-row row-3">
+                        <p class="photo-note">Portrett av Malcom.<br>Foto: Meg.</p>
+                        <figure class="photo-frame portrait">
+                            <img src="bilder/MalcomPortrett1.jpg" alt="Portrett av Malcom i stripet genser">
+                        </figure>
+                        <figure class="photo-frame landscape">
+                            <img src="bilder/identitet-Gjenopprettet.jpg" alt="Foto av skjerm med grafisk prosjekt">
+                        </figure>
+                        <p class="photo-note">Foto-redigering i Photoshop med fargejustering, kontrast og komposisjon.</p>
+                    </div>
+                </div>
+
+                <div class="edge-strip" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section id="grafisk" class="section graphics">
+            <h2 class="section-pill">Grafisk</h2>
+
+            <div class="graphics-layout">
+                <div class="graphic-strip" aria-hidden="true"></div>
+
+                <div class="graphics-content">
+                    <div class="graphic-posters">
+                        <figure class="graphic-card">
+                            <img src="bilder/GrafiskBleikerpodden.jpg" alt="Plakatdesign for Bleikerpodden">
+                        </figure>
+                        <figure class="graphic-card">
+                            <img src="bilder/bakdegfilmplakat 2.jpg" class="bakdeg-poster" alt="Filmplakat for Bak deg">
+                        </figure>
+                    </div>
+                    <div class="graphic-captions">
+                        <p>Plakatdesign for en podcast laget på skolen, målrettet mot ungdom.
+                         Målet var å lage et uttrykk som appellerer til ungdom VG2</p>
+                        <p>Filmplakat for kortfilmen “Bak deg” VG1.</p>
+                    </div>
+
+                    <div class="graphic-spread" aria-label="Magasinoppslag">
+                        <figure class="graphic-card">
+                            <img src="bilder/b7278333-b36d-4a58-82a5-6533978aea83-1.jpg" alt="Portrett med kamera fra intervjuoppslag">
+                        </figure>
+                        <figure class="graphic-card">
+                            <img src="bilder/b7278333-b36d-4a58-82a5-6533978aea83-2.jpg" alt="Forside av intervjuoppslag">
+                        </figure>
+                        <figure class="graphic-card">
+                            <img src="bilder/b7278333-b36d-4a58-82a5-6533978aea83-3.jpg" alt="Intervjutekst med bilde">
+                        </figure>
+                        <figure class="graphic-card">
+                            <img src="bilder/b7278333-b36d-4a58-82a5-6533978aea83-4.jpg" alt="Avslutning av intervjuoppslag">
+                        </figure>
+                    </div>
+                    <p class="spread-caption">
+                        Portrettintervju av Anders Øvergaard til en magasinoppgave på skolen.
+                        Jeg har intervjuet, tatt bilder og designet sidene
+                    </p>
+                </div>
+
+                <div class="graphic-strip" aria-hidden="true"></div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
